@@ -7,7 +7,7 @@ A site is defined through two files. Those are:
  - A group variable definition file ```group_vars/<site_code>.yml```
  - An incentory definition file ```<site_code>```
 
-The group variable definition will set options global to your site.
+The group variable definition will set options global to your site.  
 The inventory file will define all service machines used in your site (Gateways, etc.)
 
 # Group variable definition

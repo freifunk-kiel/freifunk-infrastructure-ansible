@@ -94,6 +94,20 @@ peering:
 
 # Deployment
 
-Deployment of all gateways is realized by running `ansible-playbook -b -K -i ffki -t gateway site.yml`
+Deployment of all gateways is realized by running 
 
-If you wish to deploy only one gateway in particular use `ansible-playbook -b -K -i ffki -t gateway site.yml --limit <hostname>`
+    ansible-playbook --become --ask-become-pass --inventory ffki --tags gateway site.yml --check
+
+This is a dry-run at first, if everything runs fine remove the `--check`
+
+If you wish to deploy only one tag only on all gateways
+
+    ansible-playbook --become --ask-become-pass --inventory ffki --tags <some_tag> site.yml --limit gateways
+
+If you wish to deploy only one gateway in particular use 
+
+    ansible-playbook --become --ask-become-pass --inventory ffki --tags gateway site.yml --limit <hostname>
+
+The hostnames defined in the inventory file `ffki` (e.g. `ffki-gw0`).  
+**Note:** you have to set the aliases of all hosts in your `~/.ssh/config`
+	

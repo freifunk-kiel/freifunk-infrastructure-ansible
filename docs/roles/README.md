@@ -37,4 +37,4 @@ This role sets up a fastd mesh vpn endpoint.
 This role sets up a user for automated deployment of mesh vpn peer keys and allows the ci system to push repo updates via a preconfigured ssh key.
 
 # noc_keys
-This role retieves a set of ssh public keys from a git repo and creates users with administrative priviliges that can be accessed by those keys.
+This role retrieves a set of ssh public keys from a git repo and creates users with administrative privileges that can be accessed by those keys.
