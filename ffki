@@ -1,7 +1,6 @@
 [ffki]
 ffki-gw0
 ffki-gw1
-ffki-gw2
 ffki-gw4
 ffki-gw6
 ffki-site-gutes-leben
@@ -13,14 +12,12 @@ ffki-site-bahnhof-alfeld
 [gateways]
 ffki-gw0
 ffki-gw1
-ffki-gw2
 ffki-gw4
 ffki-gw6
 
 [peering_ffnw6]
 ffki-gw0
 ffki-gw1
-ffki-gw2
 ffki-gw4
 ffki-gw6
 
