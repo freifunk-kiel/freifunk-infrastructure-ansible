@@ -20,6 +20,7 @@
   git:
     repo: https://github.com/ffnord/mesh-announce.git
     dest: /opt/mesh-announce
+    version: pre-configfile
   notify:
     - restart respondd
 
