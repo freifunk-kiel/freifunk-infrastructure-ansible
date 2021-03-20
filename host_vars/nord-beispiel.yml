@@ -1,0 +1,25 @@
+---
+interface:
+  wan:
+    name: ens18 # see ip a
+    address: # external IP
+      ipv4: 54.37.206.111
+      ipv6: 2001:41d0:700:1111::9
+    gateway:
+      ipv4: 54.34.222.254 # see ip r s |grep "default via"
+
+  batman:
+    mac: 'de:ad:be:ef:ff:13'
+
+  mesh_bridge:
+    address:  # IP from within Freifunk
+      ipv4: '10.187.49.1/17'
+      ipv6: 'fd42:eb49:c0b5:4242::fd13/64'
+    dhcp_range:
+      start: 10.187.49.2
+      end:   10.187.52.254
+
+mesh_vpn:
+  key:
+    private: superheheimsuperheheimsuperheheimsuperheheimsuperheheimsuperhehe
+    public:  12345671fc37ceca6c921c13bed8010e4bada7e422aa69ad195c24f92c12f679
